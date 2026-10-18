@@ -7,15 +7,11 @@ echo     SUBIR REPOSITORIO A GITHUB: Farjax-web
 echo ================================================================
 echo.
 echo  Repositorio destino:
-echo  https://github.com/Farjax-web/hotel_boutique_maria_morelia.git
+echo  https://github.com/Farjax-web/hotel_boutique_maria_morelia2.git
 echo.
-echo  NOTA IMPORTANTE:
-echo  1. Asegurate de haber creado el repositorio en GitHub:
-echo     https://github.com/new con el nombre:
-echo     hotel_boutique_maria_morelia
-echo.
-echo  2. Al presionar una tecla, Git abrira la ventana de inicio
+echo  1. Al presionar una tecla, Git abrira la ventana de inicio
 echo     de sesion de GitHub en tu navegador o te pedira credenciales.
+echo  2. Una vez autorizado, los archivos se subiran a la rama 'main'.
 echo ================================================================
 echo.
 pause
@@ -37,17 +33,22 @@ git push -u origin main
 if %ERRORLEVEL% EQU 0 (
     echo.
     echo ================================================================
-    echo  EXITO: Los archivos se subieron correctamente a GitHub.
-    echo  Ahora puedes desplegar tu pagina en Vercel desde:
-    echo  https://vercel.com/new
+    echo  EXITO: Los archivos se subieron correctamente a GitHub!
+    echo.
+    echo  Tu repositorio publico:
+    echo  https://github.com/Farjax-web/hotel_boutique_maria_morelia2
+    echo.
+    echo  Ahora despliega tu pagina en Vercel en 1 minuto:
+    echo  1. Ve a: https://vercel.com/new
+    echo  2. Selecciona 'hotel_boutique_maria_morelia2'
+    echo  3. Haz clic en 'Deploy'
     echo ================================================================
 ) else (
     echo.
     echo ================================================================
-    echo  ERROR AL SUBIR. Posibles causas:
-    echo  1. El repositorio no existe en https://github.com/Farjax-web
-    echo     Crealos en: https://github.com/new
-    echo  2. No se otorgaron los permisos de acceso / inicio de sesion.
+    echo  ERROR AL SUBIR.
+    echo  Por favor verifica que hayas iniciado sesion con tu cuenta
+    echo  de GitHub (Farjax-web) en el navegador.
     echo ================================================================
 )
 

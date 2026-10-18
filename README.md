@@ -2,6 +2,8 @@
 
 Sitio web oficial del Hotel Boutique María Morelia, ubicado en el Centro Histórico de Morelia, Michoacán.
 
+Repositorio: [https://github.com/Farjax-web/hotel_boutique_maria_morelia2](https://github.com/Farjax-web/hotel_boutique_maria_morelia2)
+
 ## Características
 
 - **Diseño Arquitectónico**: Fiel a la identidad virreinal de cantera rosa de Morelia.
