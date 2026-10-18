@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>Hotel Boutique María Morelia | Centro Histórico de Morelia, Michoacán</title>
+  <meta name="description" content="Hotel Boutique María Morelia: Hospedaje de lujo y calidez colonial en el Centro Histórico de Morelia. Suites con cantera rosa, desayuno michoacano incluido y la mejor tarifa directa garantizada."/>
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fcf9f3",
+            "surface-dim": "#dcdad4",
+            "surface-bright": "#fcf9f3",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f6f3ed",
+            "surface-container": "#f0eee8",
+            "surface-container-high": "#ebe8e2",
+            "surface-container-highest": "#e5e2dc",
+            "surface-variant": "#e5e2dc",
+            "on-surface": "#1c1c18",
+            "on-surface-variant": "#544340",
+            "inverse-surface": "#31312d",
+            "inverse-on-surface": "#f3f0ea",
+            "outline": "#86736f",
+            "outline-variant": "#d9c1bd",
+            "surface-tint": "#914a3d",
+            "primary": "#844034",
+            "on-primary": "#ffffff",
+            "primary-container": "#a2574a",
+            "on-primary-container": "#ffeae6",
+            "inverse-primary": "#ffb4a7",
+            "secondary": "#7d562d",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#ffca98",
+            "on-secondary-container": "#7a532a",
+            "tertiary": "#714b37",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#8c634d",
+            "on-tertiary-container": "#ffebe2",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#ffdad4",
+            "primary-fixed-dim": "#ffb4a7",
+            "secondary-fixed": "#ffdcbd",
+            "secondary-fixed-dim": "#f0bd8b",
+            "tertiary-fixed": "#ffdbca",
+            "tertiary-fixed-dim": "#eebca2"
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "price-display": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"]
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "gutter-sm": "1rem"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      h1, h2, h3, .font-serif {
+        font-family: 'Playfair Display', Georgia, serif;
+      }
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary selection:text-white">
+
+  <!-- ==================== HEADER DE NAVEGACIÓN ==================== -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md border-b border-primary/10 transition-all duration-300">
+    <div class="h-20 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-3 group" href="#inicio">
+        <!-- Arch & Monogram Colonial Crest SVG -->
+        <svg class="h-9 w-9 text-primary group-hover:scale-105 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="#844034"/>
+          <path d="M20 7C14.4772 7 10 11.4772 10 17V33H30V17C30 11.4772 25.5228 7 20 7Z" stroke="#ffca98" stroke-width="1.5" fill="none"/>
+          <path d="M20 10C16.134 10 13 13.134 13 17V33H27V17C27 13.134 23.866 10 20 10Z" stroke="#ffca98" stroke-width="0.75" stroke-dasharray="2 2" fill="none"/>
+          <path d="M15 28V19L20 25L25 19V28" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="14" r="1.5" fill="#ffca98"/>
+        </svg>
+        <span class="text-2xl font-serif text-primary tracking-tight font-medium">María Morelia</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8" id="desktop-nav">
+        <a class="nav-link text-xs uppercase tracking-widest font-semibold text-primary transition-colors hover:text-primary-container" href="#inicio">Inicio</a>
+        <a class="nav-link text-xs uppercase tracking-widest font-semibold text-on-surface-variant transition-colors hover:text-primary" href="#habitaciones">Habitaciones</a>
+        <a class="nav-link text-xs uppercase tracking-widest font-semibold text-on-surface-variant transition-colors hover:text-primary" href="#galeria">Galería</a>
+        <a class="nav-link text-xs uppercase tracking-widest font-semibold text-on-surface-variant transition-colors hover:text-primary" href="#amenidades">Amenidades</a>
+        <a class="nav-link text-xs uppercase tracking-widest font-semibold text-on-surface-variant transition-colors hover:text-primary" href="#ubicacion">Ubicación</a>
+        <a class="nav-link text-xs uppercase tracking-widest font-semibold text-on-surface-variant transition-colors hover:text-primary" href="#opiniones">Opiniones</a>
+        <a class="nav-link text-xs uppercase tracking-widest font-semibold text-on-surface-variant transition-colors hover:text-primary" href="#faq">Preguntas</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Call Link -->
+        <a class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-xs font-semibold" href="tel:+524431475016">
+          <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+          <span>(443) 147 5016</span>
+        </a>
+
+        <!-- Book Now Button (triggers modal) -->
+        <button onclick="openBookingModal()" class="flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-white text-sm font-semibold shadow-[0_4px_12px_rgba(162,87,74,0.25)] hover:shadow-lg transition-all duration-300">
+          Reservar ahora
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" aria-label="Abrir menú" class="lg:hidden p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[26px]" id="mobile-menu-icon">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-lowest border-b border-primary/10 px-6 py-6 transition-all duration-300 shadow-xl">
+      <div class="flex flex-col gap-4">
+        <a class="text-sm font-semibold uppercase tracking-wider text-primary py-2 border-b border-surface-container" href="#inicio" onclick="closeMobileMenu()">Inicio</a>
+        <a class="text-sm font-semibold uppercase tracking-wider text-on-surface-variant hover:text-primary py-2 border-b border-surface-container" href="#habitaciones" onclick="closeMobileMenu()">Habitaciones</a>
+        <a class="text-sm font-semibold uppercase tracking-wider text-on-surface-variant hover:text-primary py-2 border-b border-surface-container" href="#galeria" onclick="closeMobileMenu()">Galería</a>
+        <a class="text-sm font-semibold uppercase tracking-wider text-on-surface-variant hover:text-primary py-2 border-b border-surface-container" href="#amenidades" onclick="closeMobileMenu()">Amenidades</a>
+        <a class="text-sm font-semibold uppercase tracking-wider text-on-surface-variant hover:text-primary py-2 border-b border-surface-container" href="#ubicacion" onclick="closeMobileMenu()">Ubicación</a>
+        <a class="text-sm font-semibold uppercase tracking-wider text-on-surface-variant hover:text-primary py-2 border-b border-surface-container" href="#opiniones" onclick="closeMobileMenu()">Opiniones</a>
+        <a class="text-sm font-semibold uppercase tracking-wider text-on-surface-variant hover:text-primary py-2 border-b border-surface-container" href="#faq" onclick="closeMobileMenu()">Preguntas Frecuentes</a>
+        <div class="pt-2 flex flex-col gap-3">
+          <a class="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-surface-container text-on-surface text-sm font-medium" href="tel:+524431475016">
+            <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+            <span>Llamar: (443) 147 5016</span>
+          </a>
+          <button onclick="closeMobileMenu(); openBookingModal();" class="w-full py-3 rounded-lg bg-primary hover:bg-primary-container text-white text-sm font-semibold text-center shadow-md">
+            Reservar ahora al mejor precio
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-surface">
+
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="relative w-full -mt-20 pt-20 overflow-hidden bg-surface" id="inicio">
+      <!-- Ambient Courtyard Background Image -->
+      <div class="relative min-h-[760px] lg:min-h-[820px] w-full flex items-center justify-center">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" style="background-image: url('assets/images/hero_patio.jpg'), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXOm9kbfv9CLaQV2y_4kESS8sIEIiDLrvIPFmNTRxuAcW6_MGuc-B-aDc1bktpP_flx-6iqF0elzehaYb1PZO6iimAWt80nQmPEqnS87Te7jMKOkDo5dwoUrbShFUJBgWb-z_rMsh1sIbdgrv86_bL75PkogmzCYaHq3gPLVjH2qMxJP46XEcKi4fGbaODiW0mc_2OpAESgqy2khf-tpKWvT1iSojm3CiAolXpbLwEc66c4j5xBsMfAw');"></div>
+        
+        <!-- Multi-stop Gradient Scrim for Readability -->
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/65 to-on-surface/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-surface/85 via-surface/30 to-transparent"></div>
+
+        <!-- Hero Content Container -->
+        <div class="relative z-10 max-w-[1280px] w-full mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-36 lg:pb-40 flex flex-col items-start gap-4">
+          
+          <!-- Badges & Ratings -->
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm border border-black/5">
+              <span class="text-[#f59e0b] font-bold text-sm">★</span>
+              <span class="text-sm font-bold text-on-surface">9.0 Fantástico</span>
+              <span class="text-outline text-xs">·</span>
+              <span class="text-xs text-on-surface-variant font-medium">1,168 opiniones en Booking & TripAdvisor</span>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/95 text-white backdrop-blur-md shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+              <span class="text-[11px] font-bold tracking-widest uppercase">Alta Demanda: 2 suites disponibles</span>
+            </div>
+          </div>
+
+          <!-- Hero Headline & Description -->
+          <div class="max-w-3xl flex flex-col gap-2 mt-1">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif text-on-surface leading-tight drop-shadow-sm font-normal">
+              Hotel Boutique María Morelia
+            </h1>
+            <p class="text-base sm:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              En el corazón del Centro Histórico de Morelia. Calidez colonial de cantera rosa, exclusividad silenciosa y confort contemporáneo a escasos pasos de la majestuosa Catedral.
+            </p>
+          </div>
+
+          <!-- Direct Booking Value Props -->
+          <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-on-surface-variant text-xs sm:text-sm pt-1">
+            <span class="flex items-center gap-1.5 text-primary font-semibold">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+              Mejor tarifa directa garantizada
+            </span>
+            <span class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[18px] text-tertiary">free_cancellation</span>
+              Cancelación sin costo hasta 24h
+            </span>
+            <span class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[18px] text-secondary">restaurant</span>
+              Desayuno michoacano de cortesía
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Floating Direct Booking Engine Widget -->
+        <div class="absolute bottom-6 left-0 right-0 z-20 px-4 sm:px-6 lg:px-8 max-w-[1280px] mx-auto w-full">
+          <div class="bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl shadow-2xl p-4 sm:p-5 lg:p-6 border border-primary/10">
+            <form id="hero-booking-form" onsubmit="handleHeroSearch(event)" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 lg:gap-4 items-end">
+              
+              <!-- Check-in -->
+              <div class="lg:col-span-3 flex flex-col gap-1">
+                <label class="text-[11px] font-bold text-tertiary uppercase tracking-wider flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[15px]">calendar_today</span>
+                  Llegada
+                </label>
+                <div class="relative bg-surface-container-low rounded-lg px-3 py-2 flex items-center border border-transparent focus-within:border-primary transition-colors">
+                  <input id="hero-checkin" class="w-full bg-transparent text-sm font-semibold text-on-surface focus:outline-none cursor-pointer" type="date"/>
+                </div>
+              </div>
+
+              <!-- Check-out -->
+              <div class="lg:col-span-3 flex flex-col gap-1">
+                <label class="text-[11px] font-bold text-tertiary uppercase tracking-wider flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[15px]">event</span>
+                  Salida
+                </label>
+                <div class="relative bg-surface-container-low rounded-lg px-3 py-2 flex items-center border border-transparent focus-within:border-primary transition-colors">
+                  <input id="hero-checkout" class="w-full bg-transparent text-sm font-semibold text-on-surface focus:outline-none cursor-pointer" type="date"/>
+                </div>
+              </div>
+
+              <!-- Guests Selection -->
+              <div class="lg:col-span-2 flex flex-col gap-1">
+                <label class="text-[11px] font-bold text-tertiary uppercase tracking-wider flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[15px]">group</span>
+                  Huéspedes
+                </label>
+                <div class="bg-surface-container-low rounded-lg px-3 py-2 flex items-center border border-transparent focus-within:border-primary">
+                  <select id="hero-guests" class="w-full bg-transparent text-sm font-semibold text-on-surface focus:outline-none cursor-pointer">
+                    <option value="2">2 Adultos, 1 Hab.</option>
+                    <option value="1">1 Adulto, 1 Hab.</option>
+                    <option value="3">3 Adultos, 1 Hab.</option>
+                    <option value="4">4 Adultos, 1 Hab.</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Promo Code Badge -->
+              <div class="lg:col-span-2 flex flex-col gap-1">
+                <label class="text-[11px] font-bold text-tertiary uppercase tracking-wider flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[15px]">sell</span>
+                  Código Directo
+                </label>
+                <div class="bg-surface-container-low rounded-lg px-3 py-2 flex items-center justify-between">
+                  <span class="text-sm text-primary font-bold tracking-wide">MORELIA10</span>
+                  <span class="bg-primary/10 text-primary text-[10px] px-1.5 py-0.5 rounded font-bold uppercase">-10%</span>
+                </div>
+              </div>
+
+              <!-- Search CTA Button -->
+              <div class="lg:col-span-2">
+                <button type="submit" class="w-full py-2.5 sm:py-3 px-4 rounded-lg bg-primary hover:bg-primary-container text-white text-sm font-semibold shadow-md transition-all duration-300 flex items-center justify-center gap-2 group">
+                  <span>Disponibilidad</span>
+                  <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 2. BARRA DE CONFIANZA ==================== -->
+    <section class="w-full bg-surface-container-low py-4 shadow-sm border-b border-primary/5">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center">
+          <div class="flex items-center justify-center gap-2 py-1.5 px-2 rounded-lg hover:bg-surface transition-colors">
+            <span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+            <span class="text-xs font-semibold text-on-surface">Cancelación gratis</span>
+          </div>
+          <div class="flex items-center justify-center gap-2 py-1.5 px-2 rounded-lg hover:bg-surface transition-colors">
+            <span class="material-symbols-outlined text-primary text-[20px]">credit_card_off</span>
+            <span class="text-xs font-semibold text-on-surface">Paga al check-in</span>
+          </div>
+          <div class="flex items-center justify-center gap-2 py-1.5 px-2 rounded-lg hover:bg-surface transition-colors">
+            <span class="material-symbols-outlined text-primary text-[20px]">savings</span>
+            <span class="text-xs font-semibold text-on-surface">Mejor tarifa directa</span>
+          </div>
+          <div class="flex items-center justify-center gap-2 py-1.5 px-2 rounded-lg hover:bg-surface transition-colors">
+            <span class="material-symbols-outlined text-primary text-[20px]">diversity_3</span>
+            <span class="text-xs font-semibold text-on-surface">LGBTQ+ Friendly</span>
+          </div>
+          <div class="flex items-center justify-center gap-2 py-1.5 px-2 rounded-lg hover:bg-surface transition-colors">
+            <span class="material-symbols-outlined text-primary text-[20px]">local_parking</span>
+            <span class="text-xs font-semibold text-on-surface">Estacionamiento gratis</span>
+          </div>
+          <div class="flex items-center justify-center gap-2 py-1.5 px-2 rounded-lg hover:bg-surface transition-colors">
+            <span class="material-symbols-outlined text-primary text-[20px]">bakery_dining</span>
+            <span class="text-xs font-semibold text-on-surface">Desayuno incluido</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. NUESTRAS SUITES COLONIALES ==================== -->
+    <section class="w-full py-16 lg:py-24 bg-surface" id="habitaciones">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-2">Exclusividad y Calidez</span>
+            <h2 class="text-3xl sm:text-4xl font-serif text-on-surface">Nuestras Suites Coloniales</h2>
+            <p class="text-sm sm:text-base text-on-surface-variant max-w-xl mt-2">
+              Espacios diseñados para el descanso con el auténtico encanto de muros de cantera rosa, vigas centenarias y comodidades de alta hotelería boutique.
+            </p>
+          </div>
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant text-xs font-semibold shrink-0">
+            <span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+            <span>Descuento directo 'MORELIA10' aplicado (-10%)</span>
+          </div>
+        </div>
+
+        <!-- 3-Card Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- SUITE 1: Suite Junior -->
+          <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-primary/5">
+            <div class="relative h-64 w-full overflow-hidden">
+              <img alt="Suite Junior en Hotel Boutique María Morelia" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="assets/images/suite.jpg"/>
+              <div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+                <span class="px-2.5 py-1 rounded bg-primary text-white text-[10px] font-bold tracking-wider uppercase shadow-sm">
+                  51% MENOS HOY
+                </span>
+              </div>
+              <div class="absolute bottom-3 right-3 px-2 py-1 rounded bg-on-surface/80 text-white backdrop-blur-sm text-[11px] font-semibold">
+                32 m² · King Size
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Suite Clásica</span>
+                  <span class="flex items-center text-primary text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[15px] mr-0.5 text-[#f59e0b]">star</span> 4.9
+                  </span>
+                </div>
+                <h3 class="text-xl font-serif text-on-surface mb-2 font-medium">Suite Junior</h3>
+                <p class="text-xs text-on-surface-variant mb-4 leading-relaxed">
+                  2 Personas · Cama King Size · Ventanales con luz natural hacia el patio colonial interno.
+                </p>
+                <!-- Amenities -->
+                <div class="grid grid-cols-2 gap-2 text-xs text-on-surface-variant mb-4 bg-surface-container-low p-3 rounded-lg">
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">ac_unit</span> A/C Silencioso</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">wifi</span> Wi-Fi 5G Veloz</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">tv</span> Smart TV 55"</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">coffee_maker</span> Nespresso</div>
+                </div>
+                <div class="space-y-1 mb-6">
+                  <div class="flex items-center gap-2 text-primary text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[16px]">done</span>
+                    <span>Desayuno a la carta incluido</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-on-surface-variant text-xs">
+                    <span class="material-symbols-outlined text-[16px] text-[#22c55e]">check_circle</span>
+                    <span>Cancelación gratuita sin costo</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-4 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-xl flex flex-col gap-3">
+                <div class="flex items-baseline justify-between">
+                  <div>
+                    <span class="text-xs text-outline line-through">$3,250 MXN</span>
+                    <div class="flex items-baseline gap-1">
+                      <span class="text-2xl font-serif text-primary font-bold">$1,590</span>
+                      <span class="text-xs text-on-surface-variant">MXN / noche</span>
+                    </div>
+                  </div>
+                  <span class="text-[11px] text-on-surface-variant uppercase font-semibold">Impuestos incl.</span>
+                </div>
+                <button onclick="selectSuite('junior')" class="w-full py-2.5 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-white text-on-surface text-sm font-semibold transition-all duration-200">
+                  Seleccionar habitación
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUITE 2: Suite Junior Deluxe (Destacada) -->
+          <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-xl ring-2 ring-primary relative transform lg:-translate-y-2 transition-all duration-300">
+            <div class="bg-primary text-white py-1.5 text-center text-[11px] font-bold tracking-widest uppercase z-10">
+              ★ Opción Más Reservada en Morelia
+            </div>
+            <div class="relative h-64 w-full overflow-hidden">
+              <img alt="Suite Junior Deluxe con balcón virreinal" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="assets/images/suite.jpg"/>
+              <div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+                <span class="px-2.5 py-1 rounded bg-[#b84a28] text-white text-[10px] font-bold tracking-wider uppercase shadow-md">
+                  51% MENOS HOY
+                </span>
+              </div>
+              <div class="absolute bottom-3 right-3 px-2 py-1 rounded bg-on-surface/80 text-white backdrop-blur-sm text-[11px] font-semibold">
+                42 m² · Balcón Virreinal
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[11px] font-bold text-primary uppercase tracking-wider">Suite Signature</span>
+                  <span class="flex items-center text-primary text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[15px] mr-0.5 text-[#f59e0b]">star</span> 5.0
+                  </span>
+                </div>
+                <h3 class="text-xl font-serif text-on-surface mb-2 font-medium">Suite Junior Deluxe</h3>
+                <p class="text-xs text-on-surface-variant mb-4 leading-relaxed">
+                  2 Huéspedes · Cama King Size + Balcón privado de cantera con vista a calle empedrada virreinal.
+                </p>
+                <!-- Amenities -->
+                <div class="grid grid-cols-2 gap-2 text-xs text-on-surface-variant mb-4 bg-surface-container p-3 rounded-lg">
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">balcony</span> Balcón Colonial</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">hot_tub</span> Hidromasaje</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">kitchen</span> Cocineta</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">wifi</span> Wi-Fi Ultra 5G</div>
+                </div>
+                <div class="space-y-1 mb-3">
+                  <div class="flex items-center gap-2 text-primary text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[16px]">done_all</span>
+                    <span>Desayuno buffet artesanal incluido</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-on-surface-variant text-xs">
+                    <span class="material-symbols-outlined text-[16px] text-[#22c55e]">check_circle</span>
+                    <span>Sin pago por adelantado · Paga al llegar</span>
+                  </div>
+                </div>
+                <!-- Urgency Tag -->
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-error-container/60 text-on-error-container text-[11px] font-bold mb-4 w-full">
+                  <span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                  <span>¡Solo queda 1 suite a este precio preferencial!</span>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-4 bg-surface-container -mx-6 -mb-6 p-4 rounded-b-xl flex flex-col gap-3">
+                <div class="flex items-baseline justify-between">
+                  <div>
+                    <span class="text-xs text-outline line-through">$4,100 MXN</span>
+                    <div class="flex items-baseline gap-1">
+                      <span class="text-2xl font-serif text-primary font-bold">$1,990</span>
+                      <span class="text-xs text-on-surface-variant">MXN / noche</span>
+                    </div>
+                  </div>
+                  <span class="text-[11px] text-primary font-bold">Ahorras $2,110 MXN</span>
+                </div>
+                <button onclick="selectSuite('deluxe')" class="w-full py-3 rounded-lg bg-primary hover:bg-primary-container text-white text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-200">
+                  Seleccionar habitación
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUITE 3: Master Suite Colonial -->
+          <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-primary/5">
+            <div class="relative h-64 w-full overflow-hidden">
+              <img alt="Master Suite Colonial espaciosa" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="assets/images/suite.jpg"/>
+              <div class="absolute top-3 left-3 flex flex-col gap-1 items-start">
+                <span class="px-2.5 py-1 rounded bg-primary text-white text-[10px] font-bold tracking-wider uppercase shadow-sm">
+                  51% MENOS HOY
+                </span>
+              </div>
+              <div class="absolute bottom-3 right-3 px-2 py-1 rounded bg-on-surface/80 text-white backdrop-blur-sm text-[11px] font-semibold">
+                55 m² · Hasta 4 Huéspedes
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[11px] font-bold text-tertiary uppercase tracking-wider">Gran Confort</span>
+                  <span class="flex items-center text-primary text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[15px] mr-0.5 text-[#f59e0b]">star</span> 4.95
+                  </span>
+                </div>
+                <h3 class="text-xl font-serif text-on-surface mb-2 font-medium">Master Suite Colonial</h3>
+                <p class="text-xs text-on-surface-variant mb-4 leading-relaxed">
+                  Hasta 4 Huéspedes · 2 Camas Queen · Techos de viguería y chimenea ornamental de cantera.
+                </p>
+                <!-- Amenities -->
+                <div class="grid grid-cols-2 gap-2 text-xs text-on-surface-variant mb-4 bg-surface-container-low p-3 rounded-lg">
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">fireplace</span> Chimenea Cantera</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">deck</span> Terraza Privada</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">weekend</span> Sala de Estar</div>
+                  <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">kitchen</span> Cocineta Gourmet</div>
+                </div>
+                <div class="space-y-1 mb-6">
+                  <div class="flex items-center gap-2 text-primary text-xs font-semibold">
+                    <span class="material-symbols-outlined text-[16px]">wine_bar</span>
+                    <span>Desayuno & Cata de mezcal de cortesía</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-on-surface-variant text-xs">
+                    <span class="material-symbols-outlined text-[16px] text-[#22c55e]">check_circle</span>
+                    <span>Cancelación gratuita sin complicaciones</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-4 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-xl flex flex-col gap-3">
+                <div class="flex items-baseline justify-between">
+                  <div>
+                    <span class="text-xs text-outline line-through">$5,200 MXN</span>
+                    <div class="flex items-baseline gap-1">
+                      <span class="text-2xl font-serif text-primary font-bold">$2,550</span>
+                      <span class="text-xs text-on-surface-variant">MXN / noche</span>
+                    </div>
+                  </div>
+                  <span class="text-[11px] text-on-surface-variant uppercase font-semibold">Impuestos incl.</span>
+                </div>
+                <button onclick="selectSuite('master')" class="w-full py-2.5 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-white text-on-surface text-sm font-semibold transition-all duration-200">
+                  Seleccionar habitación
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 4. GALERÍA DE FOTOS INTERACTIVA ==================== -->
+    <section class="w-full py-16 lg:py-24 bg-surface-container-low" id="galeria">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-2">Atmósfera Virreinal</span>
+            <h2 class="text-3xl sm:text-4xl font-serif text-on-surface">Galería & Rincones Históricos</h2>
+          </div>
+          <!-- Filter Tabs -->
+          <div class="flex flex-wrap items-center gap-2" id="gallery-tabs">
+            <button onclick="filterGallery('todas')" data-filter="todas" class="gallery-tab px-4 py-1.5 rounded-full bg-primary text-white text-xs font-semibold shadow-sm transition-all">Todas</button>
+            <button onclick="filterGallery('habitaciones')" data-filter="habitaciones" class="gallery-tab px-4 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-on-surface text-xs font-semibold transition-all">Habitaciones</button>
+            <button onclick="filterGallery('patio')" data-filter="patio" class="gallery-tab px-4 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-on-surface text-xs font-semibold transition-all">Patio Central</button>
+            <button onclick="filterGallery('terraza')" data-filter="terraza" class="gallery-tab px-4 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-on-surface text-xs font-semibold transition-all">Arquería & Vistas</button>
+            <button onclick="filterGallery('gastronomia')" data-filter="gastronomia" class="gallery-tab px-4 py-1.5 rounded-full bg-surface text-on-surface-variant hover:text-on-surface text-xs font-semibold transition-all">Gastronomía</button>
+          </div>
+        </div>
+
+        <!-- Mosaic Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[540px]" id="gallery-mosaic">
+          
+          <!-- Large Courtyard Photo (Index 0) -->
+          <div onclick="openLightbox(0)" data-category="patio" class="gallery-item md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group cursor-pointer shadow-md">
+            <img alt="Patio colonial central con fuente de cantera rosa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 min-h-[300px]" src="assets/images/hero_patio.jpg"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-5">
+              <div>
+                <span class="text-[11px] font-bold text-secondary-container uppercase tracking-wider block">Patio Central</span>
+                <p class="text-lg font-serif text-white">Fuente de cantera rosa bajo el cielo de Morelia</p>
+              </div>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+            </div>
+          </div>
+
+          <!-- Suite Interior (Index 1) -->
+          <div onclick="openLightbox(1)" data-category="habitaciones" class="gallery-item md:col-span-2 relative rounded-xl overflow-hidden group cursor-pointer shadow-md min-h-[240px]">
+            <img alt="Interior de suite de lujo con chimenea y viguería colonial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/images/suite.jpg"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-5">
+              <div>
+                <span class="text-[11px] font-bold text-secondary-container uppercase tracking-wider block">Suites Coloniales</span>
+                <p class="text-base font-serif text-white">Detalles en madera fina y textiles michoacanos</p>
+              </div>
+            </div>
+            <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[18px]">zoom_in</span>
+            </div>
+          </div>
+
+          <!-- Architectural Detail / Arch (Index 2) -->
+          <div onclick="openLightbox(2)" data-category="terraza" class="gallery-item relative rounded-xl overflow-hidden group cursor-pointer shadow-md min-h-[220px]">
+            <img alt="Arquería virreinal de cantera rosa tallada a mano" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/images/arch.jpg"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Arquería Virreinal</span>
+            </div>
+            <div class="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[16px]">zoom_in</span>
+            </div>
+          </div>
+
+          <!-- Gastronomy / Artisanal Breakfast (Index 3) -->
+          <div onclick="openLightbox(3)" data-category="gastronomia" class="gallery-item relative rounded-xl overflow-hidden group cursor-pointer shadow-md min-h-[220px]">
+            <img alt="Desayuno tradicional michoacano en el patio colonial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/images/breakfast.jpg"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Desayuno Michoacano</span>
+            </div>
+            <div class="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="material-symbols-outlined text-[16px]">zoom_in</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-8 flex justify-center">
+          <button onclick="openLightbox(0)" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-surface hover:bg-surface-container text-on-surface text-sm font-semibold shadow-sm transition-all duration-200 border border-primary/10">
+            <span class="material-symbols-outlined text-primary text-[20px]">photo_library</span>
+            <span>Explorar álbum de fotos del hotel</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. AMENIDADES DEL HOTEL ==================== -->
+    <section class="w-full py-16 lg:py-24 bg-surface" id="amenidades">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-2">Hospitalidad & Servicios</span>
+          <h2 class="text-3xl sm:text-4xl font-serif text-on-surface">Todo para una estancia inigualable</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant mt-2">
+            Cada detalle está pensado para envolverte en la serenidad virreinal con los estándares de confort y atención de un hotel boutique de clase mundial.
+          </p>
+        </div>
+
+        <!-- 8-Card Amenities Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">wifi</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">WiFi de alta velocidad</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Conexión de fibra óptica dedicada en todas las habitaciones y áreas comunes sin costo.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">concierge</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">Recepción & Concierge 24/7</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Atención personalizada para reservas en restaurantes, rutas del mezcal y recorridos guiados.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">roofing</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">Terraza con vista a cúpulas</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Rincón panorámico exclusivo para apreciar el atardecer y las torres iluminadas del Centro Histórico.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">airport_shuttle</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">Traslados Aeropuerto (MLM)</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Servicio privado de transportación ejecutiva puerta a puerta (coordinación con recepción).</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">lock</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">Caja fuerte digital</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Seguridad garantizada para laptops y documentos personales en cada una de nuestras suites.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">spa</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">Amenidades orgánicas</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Productos de baño artesanales a base de esencias botánicas michoacanas y servicio de camarista diario.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">luggage</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">Guardaequipaje gratuito</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Disfruta Morelia ligero antes de tu check-in o tras tu check-out con resguardo vigilado las 24 horas.</p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3 border border-primary/5">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-[26px]">how_to_reg</span>
+            </div>
+            <h3 class="text-base font-semibold text-on-surface">Check-in privado & exprés</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Sin filas ni esperas. Degustación de mezcal local de bienvenida en nuestro patio de cantera rosa.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 6. UBICACIÓN PRIVILEGIADA ==================== -->
+    <section class="w-full py-16 lg:py-24 bg-surface-container-low" id="ubicacion">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Map Preview Graphic Card -->
+          <div class="lg:col-span-6 flex flex-col gap-3">
+            <div class="w-full h-[380px] lg:h-[460px] rounded-xl bg-cover bg-center shadow-md relative overflow-hidden flex flex-col justify-end p-5" style="background-image: url('assets/images/map.jpg'), url('https://lh3.googleusercontent.com/aida-public/AB6AXuD41XC8m62VnNUv4qytSmQvhUjPlNDFvMKzLuZKRorho8tompp-Wjpi9g58G2WgrHANway9P6g_2FmMLPYukTFbMGLv_HCRkFliBmuyAOUEGvj6ox8yamSW_uFyz5Ws_uShP-Yu1tG7KSauIQvi4LR3JYoPaEqwImBN0vFkY4G2XeP8xoqzDZbHse0x972hlp1sRA5P3-z9NPJ6xzeMyQNwKWKcW3G14cAClnxVBy03qVjRt7-H9aE0vw')">
+              
+              <!-- Map Pin Overlay Graphic Card -->
+              <div class="bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-xl shadow-lg flex items-center gap-3 border border-primary/10">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shrink-0 shadow-sm">
+                  <span class="material-symbols-outlined text-[22px]">location_on</span>
+                </div>
+                <div class="min-w-0">
+                  <div class="text-sm font-bold text-on-surface truncate">Hotel Boutique María Morelia</div>
+                  <div class="text-xs text-on-surface-variant truncate">C. Guerrero 153, Centro Histórico</div>
+                </div>
+                <a class="ml-auto px-3.5 py-1.5 rounded-lg bg-primary text-white text-[11px] font-bold uppercase tracking-wider hover:bg-primary-container shrink-0 transition-colors shadow-sm" href="https://maps.google.com/?q=C.+Guerrero+153,+Centro+Historico,+Morelia" target="_blank" rel="noreferrer">
+                  Abrir Mapa
+                </a>
+              </div>
+            </div>
+            <span class="text-xs text-on-surface-variant text-center">
+              📍 Ubicado en una calle empedrada virreinal, zona tranquila y segura con vigilancia turística permanente.
+            </span>
+          </div>
+
+          <!-- Landmark Proximities -->
+          <div class="lg:col-span-6 flex flex-col gap-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-primary text-xs font-bold w-fit">
+              <span class="material-symbols-outlined text-[18px]">near_me</span>
+              <span>Calificación de Ubicación: 9.3 Excelente</span>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-serif text-on-surface leading-tight">
+              A solo 4 cuadras de la majestuosa Catedral de Morelia
+            </h2>
+            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              Hospédate en el epicentro colonial de Michoacán sin sacrificar silencio ni descanso. Sal caminando a los cafés más emblemáticos, plazas virreinales y recintos culturales declarados Patrimonio de la Humanidad por la UNESCO.
+            </p>
+
+            <!-- Walking Distances List -->
+            <div class="flex flex-col gap-3 py-1">
+              
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-surface hover:bg-surface-container transition-colors border border-primary/5">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">church</span>
+                  <div>
+                    <span class="text-sm font-semibold text-on-surface block">Catedral de Morelia & Plaza de Armas</span>
+                    <span class="text-xs text-on-surface-variant">Espectáculo de luces y sonido los sábados</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full">4 min (350 m)</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-surface hover:bg-surface-container transition-colors border border-primary/5">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">storefront</span>
+                  <div>
+                    <span class="text-sm font-semibold text-on-surface block">Mercado de Dulces y Artesanías</span>
+                    <span class="text-xs text-on-surface-variant">Ates morelianos, rompope y cestería purépecha</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full">5 min a pie</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-surface hover:bg-surface-container transition-colors border border-primary/5">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">account_balance</span>
+                  <div>
+                    <span class="text-sm font-semibold text-on-surface block">Palacio Clavijero & Centro Cultural</span>
+                    <span class="text-xs text-on-surface-variant">Galerías virreinales y patios monumentales</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full">6 min a pie</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3.5 rounded-xl bg-surface hover:bg-surface-container transition-colors border border-primary/5">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-[22px]">favorite</span>
+                  <div>
+                    <span class="text-sm font-semibold text-on-surface block">Acueducto & Callejón del Romance</span>
+                    <span class="text-xs text-on-surface-variant">El paseo romántico predilecto bajo las buganvilias</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full">8 min a pie</span>
+              </div>
+
+            </div>
+
+            <!-- Route CTA -->
+            <div class="pt-2 flex flex-wrap items-center gap-3">
+              <a class="px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-white text-sm font-semibold shadow-sm transition-colors flex items-center gap-2" href="https://maps.google.com/?q=Hotel+Boutique+Maria+Morelia" target="_blank" rel="noreferrer">
+                <span class="material-symbols-outlined text-[18px]">directions</span>
+                <span>Cómo llegar en Google Maps</span>
+              </a>
+              <span class="text-xs text-on-surface-variant">
+                Dirección: C. Guerrero 153, Centro Histórico, Morelia
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 7. OPINIONES DE HUÉSPEDES ==================== -->
+    <section class="w-full py-16 lg:py-24 bg-surface" id="opiniones">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Ratings Banner -->
+        <div class="bg-surface-container-low rounded-2xl p-6 lg:p-8 mb-12 shadow-sm border border-primary/5">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left gap-1">
+              <div class="flex items-center gap-3">
+                <span class="text-5xl font-serif text-primary font-bold">9.0</span>
+                <div>
+                  <span class="text-xl font-serif text-on-surface block font-semibold">Fantástico</span>
+                  <span class="text-xs text-on-surface-variant">1,168 opiniones verificadas</span>
+                </div>
+              </div>
+              <p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                Reconocido entre los mejores hoteles boutique de Morelia por su excelencia en servicio y ambiente colonial.
+              </p>
+            </div>
+
+            <!-- Rating Breakdown Progress Bars -->
+            <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+              <div>
+                <div class="flex justify-between text-xs text-on-surface font-medium mb-1">
+                  <span>Limpieza impecable</span>
+                  <span class="font-bold text-primary">9.4</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+                  <div class="h-full bg-primary rounded-full transition-all duration-1000" style="width: 94%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs text-on-surface font-medium mb-1">
+                  <span>Personal & Servicio</span>
+                  <span class="font-bold text-primary">9.5</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+                  <div class="h-full bg-primary rounded-full transition-all duration-1000" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs text-on-surface font-medium mb-1">
+                  <span>Confort & Descanso</span>
+                  <span class="font-bold text-primary">9.2</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+                  <div class="h-full bg-primary rounded-full transition-all duration-1000" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs text-on-surface font-medium mb-1">
+                  <span>Ubicación céntrica</span>
+                  <span class="font-bold text-primary">9.3</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+                  <div class="h-full bg-primary rounded-full transition-all duration-1000" style="width: 93%;"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3 Verified Testimonials -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between border border-primary/5">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-[#f59e0b] text-sm">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span class="text-[11px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">10 / 10</span>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface italic leading-relaxed">
+                "La atención del personal es verdaderamente excepcional. Las camas son comodísimas y el café de la mañana en el patio de cantera rosa con la fuente es pura magia. La ubicación no podría ser mejor."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-container flex items-center gap-3 mt-4">
+              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-serif text-sm">
+                SM
+              </div>
+              <div>
+                <span class="text-sm font-semibold text-on-surface block">Sofía M.</span>
+                <span class="text-xs text-on-surface-variant">🇲🇽 Ciudad de México · Estancia en pareja</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between border border-primary/5">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-[#f59e0b] text-sm">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span class="text-[11px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">10 / 10</span>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface italic leading-relaxed">
+                "A true gem in historic Morelia! Stunning colonial architecture paired with all modern luxury comforts. Booking directly with promo MORELIA10 saved us over $60 USD. We will definitely return next year!"
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-container flex items-center gap-3 mt-4">
+              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-serif text-sm">
+                DK
+              </div>
+              <div>
+                <span class="text-sm font-semibold text-on-surface block">David K.</span>
+                <span class="text-xs text-on-surface-variant">🇺🇸 Austin, TX · Huésped verificado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between border border-primary/5">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex text-[#f59e0b] text-sm">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span class="text-[11px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">10 / 10</span>
+              </div>
+              <p class="text-xs sm:text-sm text-on-surface italic leading-relaxed">
+                "Hôtel magnifique et paisible au cœur historique de Morelia. Très propre, personnel adorable et petit déjeuner michoacain absolument délicieux sous les arcades fleuries."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-container flex items-center gap-3 mt-4">
+              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-serif text-sm">
+                ML
+              </div>
+              <div>
+                <span class="text-sm font-semibold text-on-surface block">Marie L.</span>
+                <span class="text-xs text-on-surface-variant">🇫🇷 Lyon, Francia · Viaje cultural</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 8. PREGUNTAS FRECUENTES ==================== -->
+    <section class="w-full py-16 lg:py-24 bg-surface-container-low" id="faq">
+      <div class="max-w-[880px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold text-primary uppercase tracking-widest block mb-2">Claridad & Confianza</span>
+          <h2 class="text-3xl sm:text-4xl font-serif text-on-surface">Preguntas Frecuentes</h2>
+          <p class="text-sm sm:text-base text-on-surface-variant mt-1">
+            Resolvemos tus dudas para que planifiques tu estancia en Morelia con total tranquilidad.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          
+          <details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer transition-all duration-300 border border-primary/5" open>
+            <summary class="text-base font-semibold text-on-surface flex items-center justify-between list-none">
+              <span>¿Cuáles son los horarios de check-in y check-out?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              El check-in se realiza a partir de las 15:00 hrs y el check-out es hasta las 12:00 hrs (mediodía). Para reservaciones directas ofrecemos early check-in de cortesía sujeto a disponibilidad al momento de tu llegada, así como servicio de guardaequipaje vigilado gratuito.
+            </div>
+          </details>
+
+          <details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer transition-all duration-300 border border-primary/5">
+            <summary class="text-base font-semibold text-on-surface flex items-center justify-between list-none">
+              <span>¿Cuál es la política de cancelación para reservas directas?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Todas las reservaciones realizadas directamente a través de nuestro sitio web o por WhatsApp cuentan con cancelación 100% gratuita hasta 24 horas antes de tu fecha de llegada. Sin penalizaciones ni cargos ocultos.
+            </div>
+          </details>
+
+          <details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer transition-all duration-300 border border-primary/5">
+            <summary class="text-base font-semibold text-on-surface flex items-center justify-between list-none">
+              <span>¿El desayuno está incluido en la tarifa?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Sí, todas las reservaciones directas incluyen nuestro tradicional desayuno michoacano servido a la carta o tipo buffet artesanal en el patio central de cantera rosa, acompañado de fruta fresca de temporada, pan dulce local y café de olla.
+            </div>
+          </details>
+
+          <details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer transition-all duration-300 border border-primary/5">
+            <summary class="text-base font-semibold text-on-surface flex items-center justify-between list-none">
+              <span>¿Aceptan mascotas en el hotel?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Somos Pet-Friendly bajo solicitud previa. Disponemos de suites especialmente acondicionadas con acceso a terraza para mascotas pequeñas y medianas educadas, incluyendo camita y recipientes de agua.
+            </div>
+          </details>
+
+          <details class="group bg-surface-container-lowest rounded-xl p-5 shadow-sm cursor-pointer transition-all duration-300 border border-primary/5">
+            <summary class="text-base font-semibold text-on-surface flex items-center justify-between list-none">
+              <span>¿Cuentan con estacionamiento para huéspedes?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="mt-3 text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+              Sí, contamos con convenio de estacionamiento privado techado, cerrado y vigilado con cámaras de seguridad las 24 horas a escasa media cuadra del hotel, con acceso libre para nuestros huéspedes sin costo adicional.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 9. CTA FINAL (Grand Banner) ==================== -->
+    <section class="w-full py-16 lg:py-24 bg-surface relative overflow-hidden" id="contacto">
+      <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="relative rounded-2xl overflow-hidden bg-gradient-to-r from-[#844034] via-[#914a3d] to-[#6e352b] text-white p-8 sm:p-12 lg:py-16 shadow-2xl flex flex-col items-center text-center">
+          
+          <!-- Decorative Flares -->
+          <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+
+          <div class="relative z-10 max-w-2xl flex flex-col items-center gap-4">
+            
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-secondary-container text-xs font-bold uppercase tracking-wider">
+              <span class="material-symbols-outlined text-[16px]">stars</span>
+              <span>Promoción Exclusiva Web Directa</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif leading-tight">
+              ¿Listo para tu próxima escapada a Morelia?
+            </h2>
+
+            <p class="text-sm sm:text-base text-[#ffeae6] max-w-xl font-normal leading-relaxed">
+              Reserva hoy directo con nosotros y obtén <strong class="text-white font-bold">10% de descuento adicional</strong> con el código <span class="underline decoration-secondary-container font-semibold">MORELIA10</span>, desayuno michoacano de cortesía y cancelación gratuita sin anticipo.
+            </p>
+
+            <div class="pt-3 flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
+              <button onclick="openBookingModal()" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-surface-container-lowest text-primary font-semibold text-sm sm:text-base shadow-xl hover:bg-surface-bright transition-all duration-300 flex items-center justify-center gap-2">
+                <span>Reservar ahora al mejor precio</span>
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </button>
+              <a class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-transparent hover:bg-white/10 text-white font-semibold text-sm sm:text-base transition-colors flex items-center justify-center gap-2 border border-white/30" href="tel:+524431475016">
+                <span class="material-symbols-outlined text-[20px]">call</span>
+                <span>Llamar: (443) 147 5016</span>
+              </a>
+            </div>
+
+            <div class="pt-2 flex flex-wrap items-center justify-center gap-4 text-xs text-white/80">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[15px]">verified</span>
+                Sin cargos de gestión
+              </span>
+              <span>·</span>
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[15px]">lock</span>
+                Reserva 100% segura
+              </span>
+              <span>·</span>
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[15px]">sentiment_very_satisfied</span>
+                Confirmación inmediata
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-surface-container-low text-on-surface-variant py-16 shadow-[0_-4px_20px_rgba(78,48,36,0.03)] border-t border-primary/5">
+    <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-primary/10">
+        
+        <!-- Brand Column -->
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <svg class="h-8 w-8 text-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="8" fill="#844034"/>
+              <path d="M20 7C14.4772 7 10 11.4772 10 17V33H30V17C30 11.4772 25.5228 7 20 7Z" stroke="#ffca98" stroke-width="1.5" fill="none"/>
+              <path d="M15 28V19L20 25L25 19V28" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-xl font-serif text-primary font-medium">María Morelia</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Santuario colonial de elegancia discreta y calidez en el corazón monumental de Morelia, Michoacán.
+          </p>
+          <div class="flex items-center gap-2 pt-1">
+            <a aria-label="Instagram" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://instagram.com" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined text-[16px]">photo_camera</span>
+            </a>
+            <a aria-label="Facebook" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://facebook.com" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined text-[16px]">public</span>
+            </a>
+            <a aria-label="TripAdvisor" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://tripadvisor.com" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined text-[16px]">hotel_class</span>
+            </a>
+            <a aria-label="Google Maps" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://maps.google.com/?q=Hotel+Boutique+Maria+Morelia" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined text-[16px]">pin_drop</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Column -->
+        <div>
+          <h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-4">Contacto</h4>
+          <div class="flex flex-col gap-2.5 text-xs text-on-surface-variant">
+            <div class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-primary text-[16px] shrink-0">location_on</span>
+              <span>C. Guerrero 153, Centro Histórico, 58000 Morelia, Michoacán, México</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[16px] shrink-0">call</span>
+              <a class="hover:text-primary transition-colors font-medium" href="tel:+524431475016">+52 (443) 147 5016</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[16px] shrink-0">mail</span>
+              <a class="hover:text-primary transition-colors break-all" href="mailto:reservaciones@hotelboutiquemaria.mx">reservaciones@hotelboutiquemaria.mx</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div>
+          <h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-4">Navegación</h4>
+          <ul class="flex flex-col gap-2 text-xs text-on-surface-variant">
+            <li><a class="hover:text-primary transition-colors" href="#inicio">Inicio</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#habitaciones">Suites & Habitaciones</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#galeria">Galería Fotográfica</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#amenidades">Experiencias & Patio Central</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#ubicacion">Ubicación y Entorno</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#opiniones">Opiniones de Huéspedes</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Guarantee Column -->
+        <div>
+          <h4 class="text-xs font-bold text-primary uppercase tracking-widest mb-4">Garantía Directa</h4>
+          <div class="p-4 bg-surface-container rounded-xl flex flex-col gap-2 border border-primary/5">
+            <div class="flex items-center gap-1.5 text-primary text-xs font-bold">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+              <span>Mejor Tarifa Garantizada</span>
+            </div>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Reservando en nuestra web oficial recibes degustación de bienvenida, early check-in de cortesía sujeto a disponibilidad y atención directa por nuestro concierge.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 text-center text-xs text-on-surface-variant">
+        <p>© 2026 Hotel Boutique María Morelia. Todos los derechos reservados. | Centro Histórico, Morelia, Michoacán</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP CTA ==================== -->
+  <div class="fixed bottom-6 right-6 z-40 flex items-center">
+    <a href="https://wa.me/524431475016?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20disponibilidad%20en%20Hotel%20Boutique%20Mar%C3%ADa%20Morelia" target="_blank" rel="noreferrer" class="relative group flex items-center gap-2 px-4 py-3 bg-[#25D366] text-white rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.35)] hover:scale-105 transition-all duration-300">
+      <span class="absolute -inset-1 rounded-full bg-[#25D366] opacity-30 animate-ping"></span>
+      <span class="material-symbols-outlined text-[22px] relative z-10">chat</span>
+      <span class="text-xs font-bold tracking-wide relative z-10 hidden sm:inline">Reservar por WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ==================== MODAL DE RESERVACIÓN INTERACTIVO ==================== -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm overflow-y-auto flex items-center justify-center p-4">
+    <div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden border border-primary/10 my-8 transition-all">
+      
+      <!-- Modal Header -->
+      <div class="bg-primary text-white p-5 sm:p-6 flex items-center justify-between">
+        <div>
+          <span class="text-[11px] font-bold tracking-widest uppercase text-secondary-container block">Reservación Directa Oficial</span>
+          <h3 class="text-xl sm:text-2xl font-serif">Tu Estancia en María Morelia</h3>
+        </div>
+        <button onclick="closeBookingModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Modal Body (Form View) -->
+      <div id="modal-form-view" class="p-6">
+        <form onsubmit="submitBooking(event)" class="space-y-4">
+          
+          <!-- Suite Selection -->
+          <div>
+            <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1.5">Seleccionar Suite</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2" id="modal-suite-options">
+              <button type="button" onclick="setModalSuite('junior')" id="opt-junior" class="suite-opt p-3 rounded-lg border-2 border-primary/20 text-left transition-all hover:border-primary">
+                <span class="text-xs font-bold text-on-surface block">Suite Junior</span>
+                <span class="text-xs text-primary font-bold block">$1,590 MXN</span>
+                <span class="text-[10px] text-on-surface-variant">King Size · 2 pers.</span>
+              </button>
+              <button type="button" onclick="setModalSuite('deluxe')" id="opt-deluxe" class="suite-opt p-3 rounded-lg border-2 border-primary bg-primary/5 text-left transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-on-surface block">Suite Deluxe</span>
+                  <span class="text-[9px] bg-primary text-white px-1 rounded font-bold">Popular</span>
+                </div>
+                <span class="text-xs text-primary font-bold block">$1,990 MXN</span>
+                <span class="text-[10px] text-on-surface-variant">Balcón · 2 pers.</span>
+              </button>
+              <button type="button" onclick="setModalSuite('master')" id="opt-master" class="suite-opt p-3 rounded-lg border-2 border-primary/20 text-left transition-all hover:border-primary">
+                <span class="text-xs font-bold text-on-surface block">Master Suite</span>
+                <span class="text-xs text-primary font-bold block">$2,550 MXN</span>
+                <span class="text-[10px] text-on-surface-variant">Terraza · Hasta 4</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dates Selection -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Fecha de Llegada</label>
+              <input type="date" id="modal-checkin" onchange="calculateBookingTotal()" required class="w-full bg-surface-container-low border border-primary/10 rounded-lg p-2.5 text-xs font-semibold text-on-surface focus:outline-none focus:border-primary"/>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Fecha de Salida</label>
+              <input type="date" id="modal-checkout" onchange="calculateBookingTotal()" required class="w-full bg-surface-container-low border border-primary/10 rounded-lg p-2.5 text-xs font-semibold text-on-surface focus:outline-none focus:border-primary"/>
+            </div>
+          </div>
+
+          <!-- Guests & Promo Code -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Número de Huéspedes</label>
+              <select id="modal-guests" class="w-full bg-surface-container-low border border-primary/10 rounded-lg p-2.5 text-xs font-semibold text-on-surface focus:outline-none focus:border-primary">
+                <option value="1">1 Huésped</option>
+                <option value="2" selected>2 Huéspedes</option>
+                <option value="3">3 Huéspedes</option>
+                <option value="4">4 Huéspedes</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Código Promocional</label>
+              <div class="relative flex items-center">
+                <input type="text" id="modal-promo" value="MORELIA10" readonly class="w-full bg-surface-container-low border border-primary/20 rounded-lg p-2.5 text-xs font-bold text-primary focus:outline-none"/>
+                <span class="absolute right-2.5 text-[10px] bg-primary/10 text-primary font-bold px-1.5 py-0.5 rounded">10% OFF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guest Contact Info -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <div>
+              <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Nombre Completo *</label>
+              <input type="text" id="modal-name" required placeholder="Ej. Ana García Morales" class="w-full bg-surface-container-low border border-primary/10 rounded-lg p-2.5 text-xs text-on-surface focus:outline-none focus:border-primary"/>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Teléfono / WhatsApp *</label>
+              <input type="tel" id="modal-phone" required placeholder="Ej. +52 443 123 4567" class="w-full bg-surface-container-low border border-primary/10 rounded-lg p-2.5 text-xs text-on-surface focus:outline-none focus:border-primary"/>
+            </div>
+          </div>
+
+          <div>
+            <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Correo Electrónico *</label>
+            <input type="email" id="modal-email" required placeholder="Ej. ana.garcia@email.com" class="w-full bg-surface-container-low border border-primary/10 rounded-lg p-2.5 text-xs text-on-surface focus:outline-none focus:border-primary"/>
+          </div>
+
+          <div>
+            <label class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Peticiones Especiales (Opcional)</label>
+            <input type="text" id="modal-notes" placeholder="Ej. Llegada tarde, aniversario de bodas, preferencia de piso..." class="w-full bg-surface-container-low border border-primary/10 rounded-lg p-2.5 text-xs text-on-surface focus:outline-none focus:border-primary"/>
+          </div>
+
+          <!-- Price Summary Box -->
+          <div class="bg-surface-container-low p-4 rounded-xl border border-primary/10 mt-3">
+            <div class="flex justify-between text-xs text-on-surface-variant mb-1">
+              <span id="summary-nights-label">Estancia de 3 noches</span>
+              <span id="summary-subtotal" class="font-semibold text-on-surface">$5,970 MXN</span>
+            </div>
+            <div class="flex justify-between text-xs text-primary mb-1">
+              <span>Descuento directo web (MORELIA10)</span>
+              <span id="summary-discount" class="font-semibold">-$597 MXN</span>
+            </div>
+            <div class="flex justify-between text-xs text-[#22c55e] mb-2">
+              <span>Desayuno michoacano artesanal</span>
+              <span class="font-semibold">GRATIS</span>
+            </div>
+            <div class="border-t border-primary/10 pt-2 flex items-baseline justify-between">
+              <div>
+                <span class="text-xs font-bold text-on-surface block">Total Estimado</span>
+                <span class="text-[10px] text-on-surface-variant">Impuestos incluidos · Paga al llegar</span>
+              </div>
+              <span id="summary-total" class="text-2xl font-serif font-bold text-primary">$5,373 MXN</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row gap-3">
+            <button type="button" onclick="reserveViaWhatsApp()" class="flex-1 py-3 px-4 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all">
+              <span class="material-symbols-outlined text-[18px]">chat</span>
+              <span>Reservar por WhatsApp</span>
+            </button>
+            <button type="submit" class="flex-1 py-3 px-4 rounded-lg bg-primary hover:bg-primary-container text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all">
+              <span class="material-symbols-outlined text-[18px]">check_circle</span>
+              <span>Confirmar Reserva Directa</span>
+            </button>
+          </div>
+
+          <p class="text-[11px] text-on-surface-variant text-center pt-1">
+            🔒 Sin anticipo obligatorio. Cancelación sin costo hasta 24 horas antes de la llegada.
+          </p>
+
+        </form>
+      </div>
+
+      <!-- Confirmation Screen View -->
+      <div id="modal-success-view" class="hidden p-8 text-center flex-col items-center gap-4">
+        <div class="w-16 h-16 rounded-full bg-[#22c55e]/10 text-[#22c55e] flex items-center justify-center mx-auto mb-2">
+          <span class="material-symbols-outlined text-[36px]">check_circle</span>
+        </div>
+        <span class="text-xs font-bold text-primary uppercase tracking-widest">¡Reservación Recibida con Éxito!</span>
+        <h3 class="text-2xl font-serif text-on-surface">Te esperamos en Hotel Boutique María Morelia</h3>
+        <p class="text-xs sm:text-sm text-on-surface-variant max-w-md mx-auto">
+          Hemos generado tu folio de reservación preferencial. En breve nuestro concierge se comunicará contigo vía WhatsApp o correo electrónico para coordinar detalles de tu llegada.
+        </p>
+
+        <!-- Booking Details Card -->
+        <div class="w-full max-w-md bg-surface-container-low p-5 rounded-xl border border-primary/10 text-left my-2 text-xs space-y-2">
+          <div class="flex justify-between border-b border-primary/10 pb-2">
+            <span class="text-on-surface-variant">Folio de Reserva:</span>
+            <span class="font-bold text-primary font-mono text-sm" id="confirm-id">MBM-94821</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-on-surface-variant">Huésped:</span>
+            <span class="font-semibold text-on-surface" id="confirm-name">Ana García</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-on-surface-variant">Suite Seleccionada:</span>
+            <span class="font-semibold text-on-surface" id="confirm-suite">Suite Junior Deluxe</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-on-surface-variant">Fechas:</span>
+            <span class="font-semibold text-on-surface" id="confirm-dates">15 Nov 2026 - 18 Nov 2026</span>
+          </div>
+          <div class="flex justify-between border-t border-primary/10 pt-2">
+            <span class="font-bold text-on-surface">Total con descuento:</span>
+            <span class="font-bold text-primary text-sm" id="confirm-total">$5,373 MXN</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 w-full max-w-md mt-2">
+          <button onclick="window.print()" class="flex-1 py-2.5 rounded-lg border border-primary/20 text-on-surface hover:bg-surface-container text-xs font-semibold flex items-center justify-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">print</span>
+            <span>Imprimir comprobante</span>
+          </button>
+          <button onclick="closeBookingModal()" class="flex-1 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-white text-xs font-semibold">
+            Listo, cerrar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== MODAL LIGHTBOX DE FOTOS ==================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex flex-col justify-between p-4 sm:p-6" onclick="closeLightboxOnBackdrop(event)">
+    
+    <!-- Lightbox Header -->
+    <div class="flex items-center justify-between text-white max-w-[1280px] w-full mx-auto pb-4">
+      <div>
+        <span class="text-xs text-secondary-container uppercase tracking-wider block font-bold" id="lightbox-counter">Foto 1 de 4</span>
+        <h4 class="text-base sm:text-lg font-serif" id="lightbox-title">Patio Central</h4>
+      </div>
+      <button onclick="closeLightbox()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
+        <span class="material-symbols-outlined text-[24px]">close</span>
+      </button>
+    </div>
+
+    <!-- Lightbox Main Image & Navigation -->
+    <div class="relative flex-1 flex items-center justify-center max-w-[1280px] w-full mx-auto overflow-hidden">
+      <!-- Prev Button -->
+      <button onclick="prevLightbox(event)" class="absolute left-2 sm:left-4 z-10 w-12 h-12 rounded-full bg-black/50 hover:bg-primary text-white flex items-center justify-center transition-colors">
+        <span class="material-symbols-outlined text-[28px]">chevron_left</span>
+      </button>
+
+      <!-- Current Image -->
+      <img id="lightbox-img" class="max-h-[75vh] max-w-full rounded-xl object-contain shadow-2xl transition-all duration-300" src="assets/images/hero_patio.jpg" alt="Foto ampliada"/>
+
+      <!-- Next Button -->
+      <button onclick="nextLightbox(event)" class="absolute right-2 sm:right-4 z-10 w-12 h-12 rounded-full bg-black/50 hover:bg-primary text-white flex items-center justify-center transition-colors">
+        <span class="material-symbols-outlined text-[28px]">chevron_right</span>
+      </button>
+    </div>
+
+    <!-- Lightbox Caption -->
+    <div class="max-w-[1280px] w-full mx-auto pt-4 text-center">
+      <p class="text-xs sm:text-sm text-white/80 max-w-2xl mx-auto" id="lightbox-desc">
+        Fuente de cantera rosa bajo el cielo de Morelia y arquería virreinal iluminada.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    // Suite Catalog
+    const SUITES = {
+      junior: {
+        id: 'junior',
+        name: 'Suite Junior',
+        price: 1590,
+        desc: '32 m² · Cama King Size · 2 Huéspedes'
+      },
+      deluxe: {
+        id: 'deluxe',
+        name: 'Suite Junior Deluxe',
+        price: 1990,
+        desc: '42 m² · Balcón Virreinal · 2 Huéspedes'
+      },
+      master: {
+        id: 'master',
+        name: 'Master Suite Colonial',
+        price: 2550,
+        desc: '55 m² · 2 Camas Queen · Hasta 4 Huéspedes'
+      }
+    };
+
+    let selectedSuiteKey = 'deluxe';
+
+    // Gallery Catalog for Lightbox
+    const GALLERY = [
+      {
+        src: 'assets/images/hero_patio.jpg',
+        title: 'Patio Colonial Central',
+        desc: 'Fuente de cantera rosa bajo el cielo de Morelia, arquería virreinal y ambiente tranquilo.'
+      },
+      {
+        src: 'assets/images/suite.jpg',
+        title: 'Suites Coloniales de Lujo',
+        desc: 'Espacios silenciosos con mobiliario en madera fina, techos de viguería y textiles michoacanos.'
+      },
+      {
+        src: 'assets/images/arch.jpg',
+        title: 'Arquería Virreinal & Faroles',
+        desc: 'Detalles arquitectónicos en cantera rosa tallada con cálida iluminación al anochecer.'
+      },
+      {
+        src: 'assets/images/breakfast.jpg',
+        title: 'Desayuno Michoacano Artesanal',
+        desc: 'Servicio en el patio central con fruta fresca, corundas tradicionales, pan dulce y café de olla.'
+      }
+    ];
+
+    let currentLightboxIndex = 0;
+
+    // Initialize Dates dynamically
+    window.addEventListener('DOMContentLoaded', () => {
+      const today = new Date();
+      const tomorrow = new Date(today);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      
+      const inThreeDays = new Date(today);
+      inThreeDays.setDate(inThreeDays.getDate() + 4);
+
+      const formatDate = (d) => d.toISOString().split('T')[0];
+
+      const checkinStr = formatDate(tomorrow);
+      const checkoutStr = formatDate(inThreeDays);
+
+      const heroCheckin = document.getElementById('hero-checkin');
+      const heroCheckout = document.getElementById('hero-checkout');
+      const modalCheckin = document.getElementById('modal-checkin');
+      const modalCheckout = document.getElementById('modal-checkout');
+
+      if (heroCheckin && heroCheckout) {
+        heroCheckin.min = formatDate(today);
+        heroCheckin.value = checkinStr;
+        heroCheckout.min = checkinStr;
+        heroCheckout.value = checkoutStr;
+
+        heroCheckin.addEventListener('change', () => {
+          heroCheckout.min = heroCheckin.value;
+          if (heroCheckout.value <= heroCheckin.value) {
+            const nextDay = new Date(heroCheckin.value);
+            nextDay.setDate(nextDay.getDate() + 2);
+            heroCheckout.value = formatDate(nextDay);
+          }
+        });
+      }
+
+      if (modalCheckin && modalCheckout) {
+        modalCheckin.min = formatDate(today);
+        modalCheckin.value = checkinStr;
+        modalCheckout.min = checkinStr;
+        modalCheckout.value = checkoutStr;
+
+        modalCheckin.addEventListener('change', () => {
+          modalCheckout.min = modalCheckin.value;
+          if (modalCheckout.value <= modalCheckin.value) {
+            const nextDay = new Date(modalCheckin.value);
+            nextDay.setDate(nextDay.getDate() + 2);
+            modalCheckout.value = formatDate(nextDay);
+          }
+          calculateBookingTotal();
+        });
+      }
+
+      calculateBookingTotal();
+    });
+
+    // Mobile Menu Functions
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        icon.textContent = 'close';
+      } else {
+        menu.classList.add('hidden');
+        icon.textContent = 'menu';
+      }
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      if (menu) menu.classList.add('hidden');
+      if (icon) icon.textContent = 'menu';
+    }
+
+    // Hero Search Handler
+    function handleHeroSearch(event) {
+      event.preventDefault();
+      const checkin = document.getElementById('hero-checkin').value;
+      const checkout = document.getElementById('hero-checkout').value;
+      const guests = document.getElementById('hero-guests').value;
+
+      document.getElementById('modal-checkin').value = checkin;
+      document.getElementById('modal-checkout').value = checkout;
+      document.getElementById('modal-guests').value = guests;
+
+      openBookingModal();
+    }
+
+    // Modal Suite Selection
+    function setModalSuite(suiteKey) {
+      selectedSuiteKey = suiteKey;
+      document.querySelectorAll('.suite-opt').forEach(btn => {
+        btn.classList.remove('border-primary', 'bg-primary/5');
+        btn.classList.add('border-primary/20');
+      });
+
+      const activeBtn = document.getElementById(`opt-${suiteKey}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('border-primary/20');
+        activeBtn.classList.add('border-primary', 'bg-primary/5');
+      }
+
+      calculateBookingTotal();
+    }
+
+    function selectSuite(suiteKey) {
+      setModalSuite(suiteKey);
+      openBookingModal();
+    }
+
+    // Booking Calculation
+    function calculateBookingTotal() {
+      const checkinVal = document.getElementById('modal-checkin').value;
+      const checkoutVal = document.getElementById('modal-checkout').value;
+
+      if (!checkinVal || !checkoutVal) return;
+
+      const d1 = new Date(checkinVal);
+      const d2 = new Date(checkoutVal);
+      const diffTime = d2 - d1;
+      let nights = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      if (nights <= 0) nights = 1;
+
+      const suite = SUITES[selectedSuiteKey] || SUITES.deluxe;
+      const subtotal = suite.price * nights;
+      const discount = Math.round(subtotal * 0.10);
+      const total = subtotal - discount;
+
+      document.getElementById('summary-nights-label').textContent = `${suite.name} · ${nights} ${nights === 1 ? 'noche' : 'noches'}`;
+      document.getElementById('summary-subtotal').textContent = `$${subtotal.toLocaleString('es-MX')} MXN`;
+      document.getElementById('summary-discount').textContent = `-$${discount.toLocaleString('es-MX')} MXN`;
+      document.getElementById('summary-total').textContent = `$${total.toLocaleString('es-MX')} MXN`;
+
+      return { nights, suite, subtotal, discount, total, checkinVal, checkoutVal };
+    }
+
+    // Open & Close Booking Modal
+    function openBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      const formView = document.getElementById('modal-form-view');
+      const successView = document.getElementById('modal-success-view');
+
+      formView.classList.remove('hidden');
+      successView.classList.add('hidden');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      calculateBookingTotal();
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Reserve Via WhatsApp Button
+    function reserveViaWhatsApp() {
+      const calc = calculateBookingTotal();
+      const name = document.getElementById('modal-name').value.trim() || 'Huésped';
+      const guests = document.getElementById('modal-guests').value;
+      const notes = document.getElementById('modal-notes').value.trim();
+
+      let msg = `Hola Hotel Boutique María Morelia, deseo realizar una reservación directa:%0A%0A` +
+        `• Huésped: ${encodeURIComponent(name)}%0A` +
+        `• Suite: ${encodeURIComponent(calc.suite.name)}%0A` +
+        `• Llegada: ${calc.checkinVal}%0A` +
+        `• Salida: ${calc.checkoutVal} (${calc.nights} noches)%0A` +
+        `• Huéspedes: ${guests}%0A` +
+        `• Código Descuento: MORELIA10 (-10%)%0A` +
+        `• Total Estimado: $${calc.total.toLocaleString('es-MX')} MXN%0A`;
+      
+      if (notes) {
+        msg += `• Comentarios: ${encodeURIComponent(notes)}%0A`;
+      }
+
+      msg += `%0A¿Tienen disponibilidad para estas fechas?`;
+
+      window.open(`https://wa.me/524431475016?text=${msg}`, '_blank');
+    }
+
+    // Submit Booking (Web Confirmation)
+    function submitBooking(event) {
+      event.preventDefault();
+      const calc = calculateBookingTotal();
+      const name = document.getElementById('modal-name').value.trim();
+
+      const folio = 'MBM-' + Math.floor(10000 + Math.random() * 90000);
+      document.getElementById('confirm-id').textContent = folio;
+      document.getElementById('confirm-name').textContent = name;
+      document.getElementById('confirm-suite').textContent = calc.suite.name;
+      document.getElementById('confirm-dates').textContent = `${calc.checkinVal} al ${calc.checkoutVal} (${calc.nights} noches)`;
+      document.getElementById('confirm-total').textContent = `$${calc.total.toLocaleString('es-MX')} MXN`;
+
+      document.getElementById('modal-form-view').classList.add('hidden');
+      document.getElementById('modal-success-view').classList.remove('hidden');
+    }
+
+    // Gallery Filtering
+    function filterGallery(category) {
+      document.querySelectorAll('.gallery-tab').forEach(tab => {
+        if (tab.getAttribute('data-filter') === category) {
+          tab.classList.remove('bg-surface', 'text-on-surface-variant');
+          tab.classList.add('bg-primary', 'text-white');
+        } else {
+          tab.classList.remove('bg-primary', 'text-white');
+          tab.classList.add('bg-surface', 'text-on-surface-variant');
+        }
+      });
+
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (category === 'todas' || itemCat === category) {
+          item.style.display = '';
+          item.classList.remove('opacity-30');
+        } else {
+          item.classList.add('opacity-30');
+        }
+      });
+    }
+
+    // Lightbox Controls
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      updateLightboxContent();
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function closeLightboxOnBackdrop(e) {
+      if (e.target.id === 'lightbox-modal') {
+        closeLightbox();
+      }
+    }
+
+    function prevLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIndex = (currentLightboxIndex - 1 + GALLERY.length) % GALLERY.length;
+      updateLightboxContent();
+    }
+
+    function nextLightbox(e) {
+      if (e) e.stopPropagation();
+      currentLightboxIndex = (currentLightboxIndex + 1) % GALLERY.length;
+      updateLightboxContent();
+    }
+
+    function updateLightboxContent() {
+      const item = GALLERY[currentLightboxIndex];
+      document.getElementById('lightbox-img').src = item.src;
+      document.getElementById('lightbox-title').textContent = item.title;
+      document.getElementById('lightbox-desc').textContent = item.desc;
+      document.getElementById('lightbox-counter').textContent = `Foto ${currentLightboxIndex + 1} de ${GALLERY.length}`;
+    }
+
+    // Keyboard support for Lightbox
+    window.addEventListener('keydown', (e) => {
+      const lightbox = document.getElementById('lightbox-modal');
+      if (!lightbox.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+      }
+      const booking = document.getElementById('booking-modal');
+      if (!booking.classList.contains('hidden') && e.key === 'Escape') {
+        closeBookingModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
