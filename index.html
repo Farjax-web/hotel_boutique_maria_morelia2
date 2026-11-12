@@ -1206,8 +1206,12 @@
 
       </div>
 
-      <div class="pt-8 text-center text-xs text-on-surface-variant">
+      <div class="pt-8 text-center text-xs text-on-surface-variant flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-primary/10">
         <p>© 2026 Hotel Boutique María Morelia. Todos los derechos reservados. | Centro Histórico, Morelia, Michoacán</p>
+        <a href="empleados.html" class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant/75 hover:text-primary transition-colors py-1 px-2.5 rounded hover:bg-surface-container" title="Portal interno para colaboradores">
+          <span class="material-symbols-outlined text-[15px]">lock</span>
+          <span>Acceso para empleados</span>
+        </a>
       </div>
 
     </div>
@@ -1223,17 +1227,17 @@
   </div>
 
   <!-- ==================== MODAL DE RESERVACIÓN INTERACTIVO ==================== -->
-  <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm overflow-y-auto flex items-center justify-center p-4">
-    <div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden border border-primary/10 my-8 transition-all">
+  <div id="booking-modal" onclick="closeBookingModalOnBackdrop(event)" class="fixed inset-0 z-50 hidden bg-black/65 backdrop-blur-sm overflow-y-auto flex items-center justify-center p-4 transition-all">
+    <div onclick="event.stopPropagation()" class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden border border-primary/15 my-6 sm:my-8 transition-all transform scale-100">
       
       <!-- Modal Header -->
-      <div class="bg-primary text-white p-5 sm:p-6 flex items-center justify-between">
-        <div>
+      <div class="bg-primary text-white p-5 sm:p-6 flex items-center justify-between border-b border-white/10">
+        <div class="pr-3">
           <span class="text-[11px] font-bold tracking-widest uppercase text-secondary-container block">Reservación Directa Oficial</span>
           <h3 class="text-xl sm:text-2xl font-serif">Tu Estancia en María Morelia</h3>
         </div>
-        <button onclick="closeBookingModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
-          <span class="material-symbols-outlined text-[20px]">close</span>
+        <button type="button" onclick="closeBookingModal()" aria-label="Cerrar ventana de reservas" title="Cerrar ventana (Esc)" class="w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 text-white flex items-center justify-center transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container shrink-0">
+          <span class="material-symbols-outlined text-[24px]">close</span>
         </button>
       </div>
 
@@ -1344,12 +1348,16 @@
           </div>
 
           <!-- Action Buttons -->
-          <div class="pt-2 flex flex-col sm:flex-row gap-3">
-            <button type="button" onclick="reserveViaWhatsApp()" class="flex-1 py-3 px-4 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all">
+          <div class="pt-2 flex flex-col sm:flex-row gap-2.5 sm:gap-3">
+            <button type="button" onclick="closeBookingModal()" class="w-full sm:w-auto px-4 py-3 rounded-lg border border-primary/20 hover:bg-surface-container text-on-surface text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-1.5 order-last sm:order-first">
+              <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              <span>Cancelar y volver</span>
+            </button>
+            <button type="button" onclick="reserveViaWhatsApp()" class="flex-1 py-3 px-4 rounded-lg bg-[#25D366] hover:bg-[#20ba59] active:scale-[0.99] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all">
               <span class="material-symbols-outlined text-[18px]">chat</span>
               <span>Reservar por WhatsApp</span>
             </button>
-            <button type="submit" class="flex-1 py-3 px-4 rounded-lg bg-primary hover:bg-primary-container text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all">
+            <button type="submit" class="flex-1 py-3 px-4 rounded-lg bg-primary hover:bg-primary-container active:scale-[0.99] text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all">
               <span class="material-symbols-outlined text-[18px]">check_circle</span>
               <span>Confirmar Reserva Directa</span>
             </button>
@@ -1654,8 +1662,14 @@
 
     function closeBookingModal() {
       const modal = document.getElementById('booking-modal');
-      modal.classList.add('hidden');
+      if (modal) modal.classList.add('hidden');
       document.body.style.overflow = 'auto';
+    }
+
+    function closeBookingModalOnBackdrop(e) {
+      if (e && e.target && e.target.id === 'booking-modal') {
+        closeBookingModal();
+      }
     }
 
     // Reserve Via WhatsApp Button

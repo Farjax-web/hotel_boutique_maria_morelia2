@@ -14,7 +14,9 @@ Repositorio: [https://github.com/Farjax-web/hotel_boutique_maria_morelia2](https
 
 ## Estructura
 
-- `index.html`: Página web principal.
+- `index.html`: Página web principal con motor de reservas y galería interactiva.
+- `empleados.html`: Portal privado para colaboradores con panel de administración y control de roles.
+- `BACKEND_ROADMAP.md`: Especificación técnica y esquema de base de datos para la conexión de backend y autenticación segura.
 - `assets/images/`: Galería de fotografías y recursos visuales en alta definición.
 - `server.ps1` / `iniciar_servidor.bat`: Servidor local para pruebas en Windows.
 - `vercel.json`: Configuración para despliegue en Vercel.

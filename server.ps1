@@ -70,7 +70,9 @@ while ($true) {
                 $filePath = Join-Path $Root $decodedUrl
 
                 if (-not (Test-Path $filePath -PathType Leaf)) {
-                    if ($rawUrl -eq "/index.html" -and (Test-Path (Join-Path $Root "code.html"))) {
+                    if (Test-Path "$filePath.html" -PathType Leaf) {
+                        $filePath = "$filePath.html"
+                    } elseif ($rawUrl -eq "/index.html" -and (Test-Path (Join-Path $Root "code.html"))) {
                         $filePath = Join-Path $Root "code.html"
                     }
                 }
