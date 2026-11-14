@@ -110,6 +110,29 @@
     .material-symbols-outlined.fill {
       font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
+
+    /* ==========================================================================
+       Aislamiento estricto de eventos para el botón flotante de WhatsApp
+       Garantiza que contenedor y ondas decorativas NUNCA intercepten clics ni toques
+       ========================================================================== */
+    .wa-floating-wrapper {
+      pointer-events: none !important;
+      -webkit-user-select: none !important;
+      user-select: none !important;
+    }
+    .wa-floating-wrapper .wa-ping-wave {
+      pointer-events: none !important;
+      -webkit-user-select: none !important;
+      user-select: none !important;
+    }
+    .wa-floating-wrapper .wa-btn-link {
+      pointer-events: auto !important;
+    }
+    .wa-floating-wrapper .wa-btn-content {
+      pointer-events: none !important;
+      -webkit-user-select: none !important;
+      user-select: none !important;
+    }
   </style>
 </head>
 <body class="bg-surface text-on-surface antialiased selection:bg-primary selection:text-white">
@@ -1124,7 +1147,7 @@
   </main>
 
   <!-- ==================== FOOTER ==================== -->
-  <footer class="w-full bg-surface-container-low text-on-surface-variant py-16 shadow-[0_-4px_20px_rgba(78,48,36,0.03)] border-t border-primary/5">
+  <footer class="w-full bg-surface-container-low text-on-surface-variant pt-16 pb-28 sm:pb-20 shadow-[0_-4px_20px_rgba(78,48,36,0.03)] border-t border-primary/5">
     <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-primary/10">
@@ -1187,6 +1210,12 @@
             <li><a class="hover:text-primary transition-colors" href="#amenidades">Experiencias & Patio Central</a></li>
             <li><a class="hover:text-primary transition-colors" href="#ubicacion">Ubicación y Entorno</a></li>
             <li><a class="hover:text-primary transition-colors" href="#opiniones">Opiniones de Huéspedes</a></li>
+            <li class="pt-2 mt-2 border-t border-primary/10">
+              <a href="empleados.html" class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant/80 hover:text-primary transition-colors py-1 group font-medium" title="Portal interno para colaboradores">
+                <span class="material-symbols-outlined text-[15px] text-primary group-hover:scale-110 transition-transform">lock</span>
+                <span>Acceso para empleados</span>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -1206,23 +1235,29 @@
 
       </div>
 
-      <div class="pt-8 text-center text-xs text-on-surface-variant flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-primary/10">
-        <p>© 2026 Hotel Boutique María Morelia. Todos los derechos reservados. | Centro Histórico, Morelia, Michoacán</p>
-        <a href="empleados.html" class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant/75 hover:text-primary transition-colors py-1 px-2.5 rounded hover:bg-surface-container" title="Portal interno para colaboradores">
-          <span class="material-symbols-outlined text-[15px]">lock</span>
-          <span>Acceso para empleados</span>
-        </a>
+      <div class="pt-8 text-xs text-on-surface-variant flex flex-col md:flex-row items-center justify-between gap-4 border-t border-primary/10">
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+          <p>© 2026 Hotel Boutique María Morelia. Todos los derechos reservados.</p>
+          <span class="hidden sm:inline text-primary/30">•</span>
+          <a href="empleados.html" class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant/85 hover:text-primary transition-colors py-1.5 px-3 rounded-lg bg-surface-container/60 hover:bg-surface-container font-medium" title="Portal interno para colaboradores">
+            <span class="material-symbols-outlined text-[15px] text-primary">lock</span>
+            <span>Acceso para empleados</span>
+          </a>
+        </div>
+        <div class="text-[11px] text-on-surface-variant/60 text-center md:text-right md:pr-28 lg:pr-36">
+          <span>Centro Histórico, Morelia, Michoacán</span>
+        </div>
       </div>
 
     </div>
   </footer>
 
   <!-- ==================== FLOATING WHATSAPP CTA ==================== -->
-  <div class="fixed bottom-6 right-6 z-40 flex items-center">
-    <a href="https://wa.me/524431475016?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20disponibilidad%20en%20Hotel%20Boutique%20Mar%C3%ADa%20Morelia" target="_blank" rel="noreferrer" class="relative group flex items-center gap-2 px-4 py-3 bg-[#25D366] text-white rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.35)] hover:scale-105 transition-all duration-300">
-      <span class="absolute -inset-1 rounded-full bg-[#25D366] opacity-30 animate-ping"></span>
-      <span class="material-symbols-outlined text-[22px] relative z-10">chat</span>
-      <span class="text-xs font-bold tracking-wide relative z-10 hidden sm:inline">Reservar por WhatsApp</span>
+  <div class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 flex items-center pointer-events-none select-none wa-floating-wrapper" style="pointer-events: none;">
+    <a href="https://wa.me/524431475016?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20y%20disponibilidad%20en%20Hotel%20Boutique%20Mar%C3%ADa%20Morelia" target="_blank" rel="noreferrer" class="pointer-events-auto wa-btn-link relative group flex items-center gap-2 px-3.5 py-2.5 sm:px-4 sm:py-3 bg-[#25D366] text-white rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.35)] hover:scale-105 active:scale-95 transition-all duration-300" style="pointer-events: auto;" aria-label="Reservar por WhatsApp">
+      <span class="absolute -inset-1 rounded-full bg-[#25D366] opacity-30 animate-ping pointer-events-none select-none wa-ping-wave" style="pointer-events: none;" aria-hidden="true"></span>
+      <span class="material-symbols-outlined text-[22px] relative z-10 pointer-events-none select-none wa-btn-content" style="pointer-events: none;">chat</span>
+      <span class="text-xs font-bold tracking-wide relative z-10 hidden sm:inline pointer-events-none select-none wa-btn-content" style="pointer-events: none;">Reservar por WhatsApp</span>
     </a>
   </div>
 
